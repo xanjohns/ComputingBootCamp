@@ -81,6 +81,18 @@ There are many great tools to [visualize your Git repositories and histories](ht
   * <https://stackoverflow.com/questions/57265785/whats-the-difference-between-git-switch-and-git-checkout-branch>
   * <https://github.blog/2020-07-27-highlights-from-git-2-28/#introducing-init-defaultbranch>
 
+<div class="activity">
+<h3 class="activity-label">Activity</h3>
+<hr/>
+<h2>Sort the steps neccessary to make changes to a git project:</h2>
+<ul id="quiz">
+    <li>Stage the changes</li>
+    <li>Clone the repo and make changes locally</li>
+    <li>Commit the changes</li>
+    <li>Push to remote</li>
+</ul>
+<button class="checkAnswer" onclick="checkAnswer()">Check Answer</button>
+</div>
 
 ## To Learn More
 There are hundreds of printed tutorials on the web, find some and read them.  Here are some we have found:

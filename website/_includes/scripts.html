@@ -13,7 +13,7 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
 <script src={{ "/js/js.cookie-2.2.1.min.js" | relative_url }}></script>
-
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
 
 
 <!-- Menu Toggle Script -->
@@ -86,4 +86,58 @@
     });
 
     {% endfor %}
+</script>
+
+<!-- Quiz script-->
+<script>
+    new Sortable(quiz);
+    const correctAnswers = [
+        "Clone the repo and make changes locally",
+        "Stage the changes",
+        "Commit the changes",
+        "Push to remote"
+    ];
+    const secondAnswers = [
+        "main.o",
+        "input.o",
+        "compute.h"
+    ];
+
+    function checkAnswer() {
+        const li = document.querySelectorAll("#quiz li");
+        let answers = new Array();
+        li.forEach(function (text) {
+            answers.push(text.innerHTML);
+        });
+        if (JSON.stringify(correctAnswers) === JSON.stringify(answers)) {
+            alert("Correct :)");
+        } else {
+            alert("Try Again...");
+        }
+    }
+
+   
+    function changeclass() {
+    
+        event.target.classList.toggle("selected");
+    }
+
+
+    function checkAnswers() {
+        
+        const li = document.querySelectorAll(".selected");
+        let answers = new Array();
+        li.forEach(function (text) {
+            answers.push(text.innerHTML);
+        });
+        if (JSON.stringify(secondAnswers) === JSON.stringify(answers)) {
+            alert("Correct :)");
+        } else {
+            alert("Try Again...");
+        }
+    }
+
+    function spawnVim() {
+        
+    }
 </script>

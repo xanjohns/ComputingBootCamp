@@ -110,6 +110,18 @@ A few of notes __before__ following the tutorial:
 Before proceeding, make sure you can ssh into `ssh.et.byu.edu` without being prompted for a password.
 
 
+<div class="activity">
+<h3 class="activity-label">Activity</h3>
+<hr/>
+<h2>Vim</h2>
+<pre>
+  <code>
+  Hello, World
+  </code>
+</pre>
+<button class="checkAnswer" onclick="checkAnswer()">Check Answer</button>
+</div>
+
 ### SSH Config
 
 You can create an SSH Config file in order to save SSH preferences.  This file is located at `~/.ssh/config`.  Each entry in this file lists a remote machine that you can connect to by alias.
