@@ -1,0 +1,43 @@
+{% for item in site.data.quizzes[{{page.title}}].questions %}
+<div class="activity">
+<h3 class="activity-label">Activity</h3>
+<hr/>
+<h2>{{item.prompt}}</h2>
+{% if item.type=="multiple_choice" %}
+<ul class="quiz">
+    {% for response in item.responses %}
+    {% if response.correct %}
+    <li onclick="checkAnswer2({{response.correct}})">{{response.text}}</li>
+    {% else %}
+    <li onclick="checkAnswer2({{response.correct}})">{{response.text}}</li>
+    {% endif %}
+    {% endfor %}
+   
+</ul>
+{% else %}
+<div class="matching-cont">
+    <ul class="quiz matching-col">
+        {% for response in item.responses %}
+        <li onclick="changeclass()">{{response.textA}}</li>
+        {% endfor %}
+    </ul>
+    <ul class="quiz matching-col">
+        {% for response in item.responses %}
+        <li onclick="changeclass()">{{response.textB}}</li>
+        {% endfor %}
+
+    </ul>
+</div>
+{% endif %}
+</div>
+{% endfor %}
+
+<script type="text/javascript">
+    var ul = document.querySelectorAll('.matching-col');
+    for (let i = 0; i < ul.length; i++) {
+    for (var j = ul[i].children.length; j >= 0; j--) {
+        ul[i].appendChild(ul[i].children[Math.random() * j | 0]);
+    
+    }
+    }
+</script>

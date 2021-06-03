@@ -18,5 +18,9 @@ layout: default
     {% endif %}
 
     {{ content }}
+
+    {% if page.quiz %}
+      {% include quizzes.html %}
+    {% endif %}
   </div>
 </article>

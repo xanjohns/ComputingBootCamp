@@ -1,0 +1,18 @@
+questions:
+- prompt: What is the right number?
+  type: multiple_choice
+  responses: 
+    - text: answer 1
+      correct: true
+    - text: answer 2
+
+- prompt: What comes next?
+  type: matching
+  responses: 
+    - textA: hello
+      textB: goodbye
+    - textA: bonjour
+      textB: au revoir
+    - textA: hola
+      textB: hasta la vista
+    

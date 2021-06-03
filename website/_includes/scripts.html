@@ -1,3 +1,4 @@
+
 <!-- Bootstrap core JavaScript -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -91,18 +92,7 @@
 <!-- Quiz script-->
 <script>
     new Sortable(quiz);
-    const correctAnswers = [
-        "Clone the repo and make changes locally",
-        "Stage the changes",
-        "Commit the changes",
-        "Push to remote"
-    ];
-    const secondAnswers = [
-        "main.o",
-        "input.o",
-        "compute.h"
-    ];
-
+    
     function checkAnswer() {
         const li = document.querySelectorAll("#quiz li");
         let answers = new Array();
@@ -113,6 +103,16 @@
             alert("Correct :)");
         } else {
             alert("Try Again...");
+        }
+    }
+    
+    function checkAnswer2(isCorrect) {
+        if (isCorrect) {
+            event.target.classList.add("correct")
+            alert("Nice!");
+        }
+        else {
+            event.target.classList.add("incorrect")
         }
     }
 
@@ -137,7 +137,4 @@
         }
     }
 
-    function spawnVim() {
-        
-    }
 </script>
