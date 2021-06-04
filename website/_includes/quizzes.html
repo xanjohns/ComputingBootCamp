@@ -18,12 +18,12 @@
 <div class="matching-cont">
     <ul class="quiz matching-col">
         {% for response in item.responses %}
-        <li onclick="changeclass()">{{response.textA}}</li>
+        <li id='{{response.textA}}' onclick="changeclass(); checkAnswers('{{response.textA}}', '{{response.textB}}')">{{response.textA}}</li>
         {% endfor %}
     </ul>
     <ul class="quiz matching-col">
         {% for response in item.responses %}
-        <li onclick="changeclass()">{{response.textB}}</li>
+        <li id='{{response.textB}}' onclick="changeclass(); checkAnswers('{{response.textA}}', '{{response.textB}}')">{{response.textB}}</li>
         {% endfor %}
 
     </ul>
@@ -33,6 +33,8 @@
 {% endfor %}
 
 <script type="text/javascript">
+    var leftColSelected = false;
+    var rightColSelected = false;
     var ul = document.querySelectorAll('.matching-col');
     for (let i = 0; i < ul.length; i++) {
     for (var j = ul[i].children.length; j >= 0; j--) {

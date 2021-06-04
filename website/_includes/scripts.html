@@ -91,50 +91,41 @@
 
 <!-- Quiz script-->
 <script>
-    new Sortable(quiz);
-    
-    function checkAnswer() {
-        const li = document.querySelectorAll("#quiz li");
-        let answers = new Array();
-        li.forEach(function (text) {
-            answers.push(text.innerHTML);
-        });
-        if (JSON.stringify(correctAnswers) === JSON.stringify(answers)) {
-            alert("Correct :)");
-        } else {
-            alert("Try Again...");
-        }
-    }
     
     function checkAnswer2(isCorrect) {
         if (isCorrect) {
             event.target.classList.add("correct")
-            alert("Nice!");
         }
         else {
             event.target.classList.add("incorrect")
         }
     }
 
-   
     function changeclass() {
-    
-        event.target.classList.toggle("selected");
+        let selectedItem = event.target.parentElement.getElementsByClassName("selected")[0];
+        if (selectedItem != null)
+        selectedItem.classList.remove("selected");
+        event.target.classList.add("selected");
     }
+    
+    
 
 
-    function checkAnswers() {
-        
-        const li = document.querySelectorAll(".selected");
-        let answers = new Array();
-        li.forEach(function (text) {
-            answers.push(text.innerHTML);
-        });
-        if (JSON.stringify(secondAnswers) === JSON.stringify(answers)) {
-            alert("Correct :)");
-        } else {
-            alert("Try Again...");
+
+    function checkAnswers(responseA, responseB) {
+        let leftItem = document.getElementById(responseA);
+        let rightItem = document.getElementById(responseB);
+        if (leftItem.classList.contains("selected")==true && rightItem.classList.contains("selected")==true) {
+            leftItem.onclick = function() {return false;};
+            leftItem.classList.add("disabled");
+            //setTimeout(function() {leftItem.classList.remove("selected")},5300);
+            rightItem.onclick = function() {return false;};
+            rightItem.classList.add("disabled");
+            //rightItem.classList.remove("selected");
+            rightColSelected = false;
+            leftColSelected = false;
         }
+       
     }
 
 </script>
