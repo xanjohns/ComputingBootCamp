@@ -1,3 +1,7 @@
+$primary-button-color: rgb(192, 210, 236);
+$pink-button-color: rgb(236, 139, 210);
+$grey-button-color: rgba(218, 218, 218, 0.623);
+
 body {
   font-family: sans-serif;
 }
@@ -40,20 +44,6 @@ body {
   animation: incorrect 0.7s forwards;
 }
 
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-
 @keyframes select {
   from {
     transform: scale(1,1);
@@ -65,11 +55,11 @@ body {
 
 @keyframes disable {
   from {
-    background-color: rgb(204, 140, 163);
+    background-color: $pink-button-color;
   }
   30% {background-color: rgb(169, 228, 169)}
   to {
-    background-color: rgba(218, 218, 218, 0.623);
+    background-color: $grey-button-color;
     opacity: 50%;
     cursor: default;
   }
@@ -87,11 +77,11 @@ body {
 
 @keyframes incorrect {
   from {
-    background-color: rgb(204, 140, 163);
+    background-color: $pink-button-color;
   }
   30% {background-color: rgb(219, 106, 106)}
   to {
-    background-color: rgba(218, 218, 218, 0.623);
+    background-color: $grey-button-color;
     opacity: 50%;
     cursor: default;
   }
@@ -101,7 +91,7 @@ body {
 
 .matching-col li.selected {
   animation: select 0.1s;
-  background-color: rgb(204, 140, 163);
+  background-color: $pink-button-color;
   animation-fill-mode: forwards;
 }
 
