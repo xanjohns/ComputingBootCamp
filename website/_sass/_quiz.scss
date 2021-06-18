@@ -157,6 +157,10 @@ body {
 input.correct {
   animation: correct 0.9s forwards; 
   border-style: solid;
-  animation: disable 0.7s forwards;
+  background-color: grey;
+  transition: background-color 1s;
 }
+
+
+
 

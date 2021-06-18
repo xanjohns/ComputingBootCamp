@@ -113,6 +113,7 @@
         if (event.target.value == blank) {
             event.target.classList.add("correct");
             event.target.disabled = true;
+            event.target.parentElement.nextElementSibling.firstElementChild.focus();
         }
     }
 
