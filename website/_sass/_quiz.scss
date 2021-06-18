@@ -59,7 +59,6 @@ body {
 
 @keyframes disable {
   from {
-    background-color: $pink-button-color;
   }
   30% {background-color: rgb(169, 228, 169)}
   to {
@@ -155,9 +154,9 @@ body {
 }
 
 input.correct {
-  animation: correct 0.9s forwards; 
+  animation: correct 0.9s none; 
+  animation: disable 0.9s forwards;
   border-style: solid;
-  background-color: grey;
   transition: background-color 1s;
 }
 

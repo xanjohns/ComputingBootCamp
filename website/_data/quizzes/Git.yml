@@ -9,32 +9,19 @@ questions:
 - prompt: What comes next?
   type: matching
   responses: 
-    - textA: hello
-      textB: goodbye
-    - textA: bonjour
-      textB: au revoir
-    - textA: hola
-      textB: hasta la vista
+    - text: hello
+      correct: goodbye
+    - text: bonjour
+      correct: au revoir
+    - text: hola
+      correct: hasta la vista
 
-- prompt: Match the correct answers
-  type: matching
-  responses:
-    - textA: 3+2
-      textB: 5
-    - textA: 4+5
-      textB: 9
-    - textA: 1+2
-      textB: 3
-    - textA: 4+6
-      textB: 10
-
-- prompt: Fill in the blank
+- prompt: Fill in the correct 
   type: fill_in
   responses:
-    - phrase: The quick brown ___ jumps over the lazy dog.
-      blank: fox
-    - phrase: Peter piper ______ a peck
-      blank: picked
-    - phrase: We will fight, day or night, ____ or snow!
-      blank: rain
-    
+    - text: The quick brown ___ jumps over the lazy dog.
+      correct: fox
+    - text: Peter piper ______ a peck
+      correct: picked
+    - text: We will fight, day or night, ____ or snow!
+      correct: rain

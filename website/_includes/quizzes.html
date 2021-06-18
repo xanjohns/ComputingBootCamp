@@ -7,9 +7,9 @@
 <ul class="quiz">
     {% for response in item.responses %}
     {% if response.correct %}
-    <li onclick="checkAnswer2('{{response.correct}}')">{{response.text}}</li>
+    <li onclick="multiple_choice_check_answer('{{response.correct}}')">{{response.text}}</li>
     {% else %}
-    <li onclick="checkAnswer2('{{response.correct}}')">{{response.text}}</li>
+    <li onclick="multiple_choice_check_answer('{{response.correct}}')">{{response.text}}</li>
     {% endif %}
     {% endfor %}
    
@@ -18,12 +18,12 @@
 <div class="matching-cont">
     <ul class="quiz matching-col">
         {% for response in item.responses %}
-        <li id='{{response.textA}}' onclick="changeclass(); checkAnswers('{{response.textA}}', '{{response.textB}}')">{{response.textA}}</li>
+        <li id='{{response.text}}' onclick="changeclass(); matching_check_answer('{{response.text}}', '{{response.correct}}')">{{response.text}}</li>
         {% endfor %}
     </ul>
     <ul class="quiz matching-col">
         {% for response in item.responses %}
-        <li id='{{response.textB}}' onclick="changeclass(); checkAnswers('{{response.textA}}', '{{response.textB}}')">{{response.textB}}</li>
+        <li id='{{response.correct}}' onclick="changeclass(); matching_check_answer('{{response.text}}', '{{response.correct}}')">{{response.correct}}</li>
         {% endfor %}
 
     </ul>
@@ -31,7 +31,7 @@
 {% else %} 
 <div class="fillin-cont">
     {% for response in item.responses %}
-        <p class="fillin-line" data-blank={{response.blank}}>{{response.phrase}}</p>
+        <p class="fillin-line" data-blank={{response.correct}}>{{response.text}}</p>
     {% endfor %}
 </div>
 {% endif %}

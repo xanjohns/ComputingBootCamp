@@ -92,7 +92,7 @@
 <!-- Quiz script-->
 <script>
     
-    function checkAnswer2(isCorrect) {
+    function multiple_choice_check_answer(isCorrect) {
         if (isCorrect) {
             event.target.classList.add("correct")
         }
@@ -117,7 +117,7 @@
         }
     }
 
-    function checkAnswers(responseA, responseB) {
+    function matching_check_answer(responseA, responseB) {
         let leftItem = document.getElementById(responseA);
         let rightItem = document.getElementById(responseB);
         if (leftItem.classList.contains("selected")==true && rightItem.classList.contains("selected")==true) {
