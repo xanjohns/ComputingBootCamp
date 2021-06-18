@@ -15,4 +15,26 @@ questions:
       textB: au revoir
     - textA: hola
       textB: hasta la vista
+
+- prompt: Match the correct answers
+  type: matching
+  responses:
+    - textA: 3+2
+      textB: 5
+    - textA: 4+5
+      textB: 9
+    - textA: 1+2
+      textB: 3
+    - textA: 4+6
+      textB: 10
+
+- prompt: Fill in the blank
+  type: fill_in
+  responses:
+    - phrase: The quick brown ___ jumps over the lazy dog.
+      blank: fox
+    - phrase: Peter piper ______ a peck
+      blank: picked
+    - phrase: We will fight, day or night, ____ or snow!
+      blank: rain
     

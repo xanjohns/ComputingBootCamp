@@ -109,8 +109,12 @@
     }
     
     
-
-
+    function fillin_check_answer(blank) {
+        if (event.target.value == blank) {
+            event.target.classList.add("correct");
+            event.target.disabled = true;
+        }
+    }
 
     function checkAnswers(responseA, responseB) {
         let leftItem = document.getElementById(responseA);

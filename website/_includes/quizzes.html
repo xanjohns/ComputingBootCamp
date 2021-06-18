@@ -7,14 +7,14 @@
 <ul class="quiz">
     {% for response in item.responses %}
     {% if response.correct %}
-    <li onclick="checkAnswer2({{response.correct}})">{{response.text}}</li>
+    <li onclick="checkAnswer2('{{response.correct}}')">{{response.text}}</li>
     {% else %}
-    <li onclick="checkAnswer2({{response.correct}})">{{response.text}}</li>
+    <li onclick="checkAnswer2('{{response.correct}}')">{{response.text}}</li>
     {% endif %}
     {% endfor %}
    
 </ul>
-{% else %}
+{% elsif item.type=="matching" %}
 <div class="matching-cont">
     <ul class="quiz matching-col">
         {% for response in item.responses %}
@@ -27,6 +27,12 @@
         {% endfor %}
 
     </ul>
+</div>
+{% else %} 
+<div class="fillin-cont">
+    {% for response in item.responses %}
+        <p class="fillin-line" data-blank={{response.blank}}>{{response.phrase}}</p>
+    {% endfor %}
 </div>
 {% endif %}
 </div>
@@ -41,5 +47,12 @@
         ul[i].appendChild(ul[i].children[Math.random() * j | 0]);
     
     }
+    }
+
+    var lines = document.querySelectorAll('.fillin-line');
+    let reg =/_+/;
+    for (let i = 0; i < lines.length; i++) {
+        lines[i].innerHTML = lines[i].innerHTML.replace(reg, "<input class='blank' type='text' oninput='fillin_check_answer(this.parentElement.dataset.blank)'>");
+        lines[i].firstElementChild.setAttribute('size', lines[i].dataset.blank.length);
     }
 </script>

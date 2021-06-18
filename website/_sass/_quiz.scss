@@ -34,6 +34,10 @@ body {
   background-color: rgb(159, 190, 235);
 }
 
+.fillin-cont {
+  padding-top: 10px;
+}
+
 .quiz li.correct {
   animation: correct 0.7s forwards;
 }
@@ -145,5 +149,14 @@ body {
 .answer-button:hover {
     background-color: rgb(219, 219, 219);
     cursor: default;
+}
+
+.blank {
+}
+
+input.correct {
+  animation: correct 0.9s forwards; 
+  border-style: solid;
+  animation: disable 0.7s forwards;
 }
 
