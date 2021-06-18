@@ -28,45 +28,54 @@ These are talks presented by faculty/students (mostly faculty).  **We will be me
 
 | Date          | Topic                                 | Speaker               | Followup Activity                                                         
 |---------------|-------------------------------        |-----------------------|-------------------------------------------------------------------   
-| Mon, May 24   | Xilinx FPGA Deep Dive                 |
-| Wed, May 26   | Xilinx FPGA Deep Dive                 |
-| Fri, May 28   | Vivado Tcl                            | Nelson
+| Mon, May 24   | FPGA Overview                         | Goeders
+| Wed, May 26   | Vivado Review and Tcl for Vivado      | Nelson
+| Fri, May 28   | Xilinx 7 Series FPGA Deep Dive  (no lecture - self-paced learning activity only) | Nelson
 | Mon, May 31   | HOLIDAY                               |
-| Wed, Jun 2    | Vivado Block Design                   |   
-| Fri, Jun 4    | Vitis Embedded SW                     |
-| Mon, Jun 7    | Vitis HLS                             |
-| Wed, Jun 9    | HLS/Vivado System Integration         |
-| Fri, Jun 11   | RapidWright                           |
-| Mon, Jun 14   | Interchange                           |
-| Fri, Jun 18   | Prjxray & FASM                        | 
-| Mon, Jun 21   | fasm2bels, fpga-tool-perf, symbiflow-examples | 
-| Wed, Jun 23   | VTR and Symbiflow-VTR                 |
+| Wed, Jun 2    | Prjxray & FASM                        | 
+| Fri, Jun 4    | fasm2bels, fpga-tool-perf, symbiflow-examples | 
+| Mon, Jun 7    | Guest Speakder
+| Wed, Jun 9    | RapidWright                           |
+| Mon, Jun 21    | Vivado Block Design + Vitis          | Goeders
+| Wed, Jun 23    | Vitis HLS                            | Goeders
 
 ## Robotics Track
 
-| Date          | Topic                                 | Speaker               | Followup Activity                                                         
-|---------------|-------------------------------        |-----------------------|-------------------------------------------------------------------   
-| Mon, May 24   | Robotics Overview & Coord Transforms  | Mangelson             | ... also watch/attend FPGA Track
-| Wed, May 26   | Jenkins / Bitbucket / PODS   est      | Easton                | ... also watch/attend FPGA Track 
-| Fri, May 28   | Perception and Sensing                | Mangelson             | OpenCV / PCL
-| Mon, May 31   | Holiday                               | -
-| Wed, Jun 2    | Attend Networking or HLS              | - 
-| Fri, Jun 4    | 3D Printing / CAD or HLS              | Bridget
-| Mon, Jun 7    | PCBs / EAGLE or HLS                   | Devon
-| Wed, Jun 9    | Attend Networking Track or HLS        | -
-| Fri, Jun 11   | LCM                                   | Kalin
-| Mon, Jun 14   | Holodeck                              | Easton
-| Wed, Jun 16   | Basic Probability                     | Mangelson             | 
-| Fri, Jun 18   | Estimation & Localization             | Mangelson             | Kalman Filter Example?
-| Mon, Jun 21   | Factor Graphs & Least Squares         | Mangelson             | Least Squares Optimization? 
-| Wed, Jun 23   | Localization, SLAM, GTSAM             | Mangelson             | GTSAM Example?
-| Fri, Jun 25   | Mapping and OGM                       | Mangelson
-| Mon, Jun 28   | Planning                              | Mangelson
-| Mon, Jun 30   | QGroundControl/Ardusub/Pymav link     | Bridget/Kalin
-| Mon, Jul 2    | OpenSceneGraph Viewer                 | Kalin
+2:00 in CB 437
+
+| Date          | Topic                                 | Speaker               | Followup Activity
+|---------------|-------------------------------        |------------------------------------------------------------------------------------------
+| Mon, May 24   | Optionally Attend FPGA Track          | 
+| Wed, May 26   | Optionally Attend FGPA Track          | 
+| Fri, May 28   | Optionally Attend FPGA Track          | 
+| Mon, May 31   | Holiday                               | 
+| Wed, Jun 2    | Attend Networking and Optionally FPGA |
+| Fri, Jun 4    | Optionally Attend FPGA Track          | 
+| Mon, Jun 7    | Optionally Attend FPGA Track          |
+| Wed, Jun 9    | Attend Networking and Optionally FPGA |
+| Fri, Jun 11   | CI/CD / Bitbucket / pods2             | Easton
+| Mon, Jun 14   | Robotics Overview & Coord Transforms  | Mangelson
+| Wed, Jun 16   | LCM and Optional FPGA                 | Kalin                 | LCM Tutorial
+| Fri, Jun 18   | Holodeck and Optional FPGA            | Easton                | Holodeck
+| Mon, Jun 21   | Perception / Sensing and Optional FPGA | Mangelson             
+| Wed, Jun 23   | OpenCV / PCL and Optional FPGA        | Devon/Kalin           | Line Detection, Camera Calibration / Scan Matching
+| Fri, Jun 25   | 
+| Mon, Jun 28   | Basic Probability                     | Mangelson             | Gaussians in Python?
+| Wed, Jun 30   | Estimation & Localization             | Mangelson             | Kalman Filter Example
+| Fri, Jul 2    | 
+| Mon, Jul 5    | Factor Graphs, SLAM, & GTSAM          | Mangelson             | GTSAM Example
+| Wed, Jul 7    | QGroundControl/Ardusub/Pymav link     | Bridget/Kalin
+| Fri, Jul 9    |
+| Mon, Jul 12   | Mapping and OGM                       | Mangelson
+| Wed, Jul 14   | CAD / 3D Printing                     | Bridget               | Simple CAD Tutorial
+| Fri, Jul 16   |
+| Mon, Jul 19   | Planning                              | Mangelson
+
 
 
 ## Networking Track
+
+The networking track will be meeting in EB 302 at 2-3:30 PM.
 
 | Date          | Topic                         | Speaker               
 |---------------|-------------------------------|-----------------------
