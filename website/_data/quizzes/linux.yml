@@ -1,0 +1,9 @@
+- prompt: Match the terminal commands with their function.
+  type: matching
+  responses:
+    - text: mv
+      correct: rename a file
+    - text: touch
+      correct: create a new file
+    - text: cat
+      correct: print out the contents of a file

@@ -1,6 +1,7 @@
 ---
 layout: page
 toc: true
+quiz: true
 title: Linux Setup & Tutorials
 slug: linux
 type: setup
@@ -109,19 +110,6 @@ A few of notes __before__ following the tutorial:
   * You probably don't want to follow Step 4 of the tutorial
 
 Before proceeding, make sure you can ssh into `ssh.et.byu.edu` without being prompted for a password.
-
-
-<div class="activity">
-<h3 class="activity-label">Activity</h3>
-<hr/>
-<h2>Vim</h2>
-<pre>
-  <code>
-  Hello, World
-  </code>
-</pre>
-<button class="checkAnswer" onclick="checkAnswer()">Check Answer</button>
-</div>
 
 ### SSH Config
 

@@ -1,4 +1,3 @@
-questions:
 - prompt: What is the right number?
   type: multiple_choice
   responses: 
